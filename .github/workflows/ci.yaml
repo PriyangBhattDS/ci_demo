@@ -15,7 +15,7 @@ jobs:
               python-version: '3.9'
 
           - name: install flake8
-            runs: |
+            run: |
               python -m pip install --upgrade pip
               pip install flake8
 
