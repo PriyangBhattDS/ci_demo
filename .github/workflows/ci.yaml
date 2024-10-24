@@ -10,8 +10,9 @@ jobs:
             uses: actions/checkout@v3
           - name: setup python
             uses: actions/setup-python@v2
-            python-version: '3.9'
-            
+            with:
+              python-version: '3.9'
+
           - name: install flake8
             runs: 
               python -m pip install --upgrade pip
