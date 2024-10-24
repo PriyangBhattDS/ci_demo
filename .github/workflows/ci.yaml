@@ -1,4 +1,4 @@
-name: linting
+name: CI
 
 on: push
 
@@ -8,15 +8,17 @@ jobs:
        steps:
           - name: code checkout
             uses: actions/checkout@v3
+
           - name: setup python
             uses: actions/setup-python@v2
             with:
               python-version: '3.9'
 
           - name: install flake8
-            runs: 
+            runs: |
               python -m pip install --upgrade pip
               pip install flake8
+
           - name: run flake8
             run:
               flake8 app.py   
