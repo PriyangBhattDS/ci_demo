@@ -6,6 +6,10 @@ def sub(x, y):
     return x - y
 
 
+def mul(a, b):
+    return a * b
+
+
 result1 = add(10, 2)
 result2 = sub(10, 5)
 
