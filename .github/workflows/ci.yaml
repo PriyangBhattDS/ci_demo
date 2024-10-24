@@ -21,7 +21,7 @@ jobs:
 
           - name: run flake8
             run:
-              flake8 app.py   
+              flake8 calc.py   
 
 
 
